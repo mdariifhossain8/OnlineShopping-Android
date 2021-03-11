@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/backgroundClr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_classes.CartDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#18611e">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_marginEnd="8dp"
+            android:onClick="homeIntent"
+            android:src="@drawable/btn_home"
+            android:layout_width="50dp"
+            android:background="#18611e"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="Total cart items"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:padding="8dp"
+        android:id="@+id/cartList"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:background="#0022ff"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Total Price"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/totalPriceTV"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="3000 BDT"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Button
+        android:onClick="placeOrder"
+        android:text="Place order"
+        android:layout_weight="1"
+        android:background="#105414"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>
